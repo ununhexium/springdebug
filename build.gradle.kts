@@ -17,8 +17,16 @@ repositories {
 }
 
 dependencies {
-  implementation("org.springframework.boot:spring-boot-starter-web")
   implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
+
+  implementation("org.apache.httpcomponents:httpcore:4.4.13")
+
   implementation("org.jetbrains.kotlin:kotlin-reflect")
+
+  implementation("org.springframework.boot:spring-boot-starter-data-rest")
+  implementation("org.springframework.boot:spring-boot-starter-web")
+
+  // TEST
+
   testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
